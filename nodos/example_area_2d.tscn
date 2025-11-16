@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwm5qx52t0pga"]
+
+[ext_resource type="Script" uid="uid://cm4cpydfaophw" path="res://nodos/example_area_2d.gd" id="1_85ey4"]
+[ext_resource type="Texture2D" uid="uid://vwtqvwy75sgh" path="res://icon.svg" id="1_gujgd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_85ey4"]
+size = Vector2(129, 129)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iq4kk"]
+radius = 21.0
+
+[node name="ExampleArea2D" type="Node2D"]
+script = ExtResource("1_85ey4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Icon" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_gujgd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_85ey4")
+debug_color = Color(0, 0.6357513, 0.4035745, 0.41960785)
+
+[node name="OtherArea2D" type="Area2D" parent="."]
+position = Vector2(83, 4)
+metadata/_edit_group_ = true
+
+[node name="OtherCollisionShape2D" type="CollisionShape2D" parent="OtherArea2D"]
+shape = SubResource("CircleShape2D_iq4kk")
+debug_color = Color(0.5714408, 0.38923168, 1, 0.41960785)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
