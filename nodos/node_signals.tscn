@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxfp2de4wpy2l"]
+
+[ext_resource type="Script" uid="uid://c3r0yoi2wad4" path="res://nodos/node_signals.gd" id="1_dqlt2"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_dqlt2")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "	Button"
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed" flags=6 binds= ["Boton presionado"]]
