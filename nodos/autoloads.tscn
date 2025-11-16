@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddxoq0q8ruxi8"]
+
+[ext_resource type="Script" uid="uid://klti4p8rdsn2" path="res://nodos/autoloads.gd" id="1_x0mu5"]
+[ext_resource type="Script" uid="uid://dbnd6fmylqbqf" path="res://nodos/score.gd" id="2_3umfj"]
+[ext_resource type="PackedScene" uid="uid://cigdqi40517jd" path="res://nodos/sub_node.tscn" id="3_3umfj"]
+
+[node name="Autoloads" type="Node2D"]
+script = ExtResource("1_x0mu5")
+
+[node name="Score" type="Node2D" parent="."]
+script = ExtResource("2_3umfj")
+
+[node name="SubNode" parent="." instance=ExtResource("3_3umfj")]
+
+[editable path="SubNode"]
