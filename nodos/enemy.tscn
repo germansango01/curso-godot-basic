@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://fty3nhqtcf1i"]
+
+[ext_resource type="Script" uid="uid://ctcuyr8ghua4r" path="res://nodos/enemy.gd" id="1_xqyyd"]
+[ext_resource type="Texture2D" uid="uid://bnt1njwhq7vrm" path="res://assets/sprites/ghost.png" id="2_p1swk"]
+
+[node name="Enemy" type="Node2D"]
+script = ExtResource("1_xqyyd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(184, 196)
+scale = Vector2(0.67578125, 0.67578125)
+texture = ExtResource("2_p1swk")
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+offset_left = 409.0
+offset_top = 206.0
+offset_right = 489.0
+offset_bottom = 240.0
+
+[connection signal="color_changed" from="ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
+[connection signal="picker_created" from="ColorPickerButton" to="." method="_on_color_picker_button_picker_created"]
+[connection signal="popup_closed" from="ColorPickerButton" to="." method="_on_color_picker_button_popup_closed"]
