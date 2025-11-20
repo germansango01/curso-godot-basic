@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnagdnxxj4pny"]
+
+[ext_resource type="Script" uid="uid://c8a5fxvnu2ph8" path="res://components/germansango/execution_order/parent_node.gd" id="1_rduvv"]
+[ext_resource type="PackedScene" uid="uid://b0joj6xs0xm2o" path="res://components/germansango/execution_order/child_node.tscn" id="2_6w5u5"]
+
+[node name="ParentNode" type="Node2D"]
+script = ExtResource("1_rduvv")
+
+[node name="ChildNode" parent="." instance=ExtResource("2_6w5u5")]

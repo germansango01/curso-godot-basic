@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d034w05vbsik"]
+
+[ext_resource type="Script" uid="uid://cvpicu8iiqxeu" path="res://components/germansango/print_message/demos/demo_print_message_class.gd" id="1_e2gyp"]
+[ext_resource type="Script" uid="uid://byxy1acm1ygu8" path="res://components/germansango/print_message/print_message.gd" id="2_fqm0m"]
+
+[node name="DemoPrintMessageClass" type="Node2D"]
+script = ExtResource("1_e2gyp")
+
+[node name="PrintMessage" type="Node" parent="."]
+script = ExtResource("2_fqm0m")
+text_to_print = "mensaje nuevo"
+execute_on_ready = true
+metadata/_custom_type_script = "uid://byxy1acm1ygu8"
+
+[connection signal="message_printed" from="PrintMessage" to="." method="_on_print_message_message_printed"]
