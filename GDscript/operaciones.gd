@@ -43,6 +43,8 @@ func doing_math() -> void:
 	print(first * second) # 32.0
 	print(first / second) # 2.0  <- ahora es división float (no se descarta decimal)
 	print(pr1 % tr1) # 0
+	print(first ** second) # 65536.0
+
 	# operadores compuestos siguen igual
 	print(pow(first, 2)) # 64.0
 	print(sqrt(second))  # 2.0
