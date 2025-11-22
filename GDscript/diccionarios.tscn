@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bekxk6q5bdlyf"]
+
+[ext_resource type="Script" uid="uid://u5x1v2onipyg" path="res://GDscript/diccionarios.gd" id="1_qno27"]
+
+[node name="Diccionarios" type="Node2D"]
+script = ExtResource("1_qno27")

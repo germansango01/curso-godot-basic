@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcyc7ltsnbp2u"]
+
+[ext_resource type="Script" uid="uid://dugi3pl8o7e22" path="res://GDscript/arreglos.gd" id="1_dds0u"]
+
+[node name="Arreglos" type="Node2D"]
+script = ExtResource("1_dds0u")
