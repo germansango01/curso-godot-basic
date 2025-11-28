@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://byawyrxetmlap"]
+
+[ext_resource type="Script" uid="uid://doxy5ckki46we" path="res://components/germansango/print_message/demos/demo_print_message_instantiate.gd" id="1_pidaf"]
+
+[node name="DemoPrintMessageInstantiate" type="Node2D"]
+script = ExtResource("1_pidaf")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs4ucjk6mlbno"]
+
+[ext_resource type="PackedScene" uid="uid://51sd4cficu38" path="res://components/germansango/print_message/print_message.tscn" id="1_ngxf6"]
+
+[node name="DemoPrintMessage" type="Node2D"]
+
+[node name="PrintMessage" parent="." instance=ExtResource("1_ngxf6")]
+text_to_print = "Hello from prueba desde hijo"

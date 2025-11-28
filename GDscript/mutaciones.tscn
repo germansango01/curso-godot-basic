@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://uje52we1xsfh"]
+
+[ext_resource type="Script" uid="uid://gy6q4bnovhwv" path="res://GDscript/mutaciones.gd" id="1_lf3br"]
+
+[node name="Mutaciones" type="Node2D"]
+script = ExtResource("1_lf3br")

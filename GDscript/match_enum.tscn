@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://i7bgwvl2ljqr"]
+
+[ext_resource type="Script" uid="uid://clgw00bwcn3kt" path="res://GDscript/match_enum.gd" id="1_710gp"]
+
+[node name="MatchEnum" type="Node2D"]
+script = ExtResource("1_710gp")
