@@ -1,4 +1,5 @@
-# 🚀 Proyecto de Aprendizaje en Godot Engine
+# 🚀 Proyecto de Aprendizaje en Godot Engine 
+## Version 0.1.0
 
 Este repositorio es un espacio de trabajo y aprendizaje dedicado a explorar las capacidades de **Godot Engine** (versión 4.x).
 
