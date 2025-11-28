@@ -4,3 +4,5 @@
 
 [node name="Operaciones" type="Node2D"]
 script = ExtResource("1_o8qoa")
+velocidad = null
+salud = null

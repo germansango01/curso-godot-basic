@@ -136,3 +136,20 @@ func use_inner_class() -> void:
 	var ic: InnerClass = InnerClass.new()
 	ic.hello()
 	ic.free()
+
+var number1 = 10
+var number2 = '10'
+
+func compare_is_same():
+	if is_same(number1, number2):
+		print('son del mismo tipo o valor')
+	else:
+		print('no tienen mismo valor o nos son el mismo tipo')
+
+func compare_equals():
+	if number1 == number2:
+		print('son iguales')
+	else:
+		print('no son iguales')
+
+	
