@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgs3vmnp8k8ol"]
+
+[ext_resource type="Script" uid="uid://dhpwtukh305j5" path="res://StateMachine/Scenes/other_scene.gd" id="1_hwm4g"]
+[ext_resource type="PackedScene" uid="uid://mghsbft228e4" path="res://StateMachine/Player/player.tscn" id="2_ulu3s"]
+
+[node name="OtherScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hwm4g")
+
+[node name="Player" parent="." instance=ExtResource("2_ulu3s")]
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Change State"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

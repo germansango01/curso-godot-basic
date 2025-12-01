@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://mghsbft228e4"]
+
+[ext_resource type="Script" uid="uid://c3rxo4iigv6s7" path="res://StateMachine/Player/player.gd" id="1_6miyk"]
+[ext_resource type="Script" uid="uid://cj8lj1ie5okru" path="res://StateMachine/state_machine.gd" id="2_rc2df"]
+[ext_resource type="Script" uid="uid://bm1qvav1awixp" path="res://StateMachine/Player/player_state_idle.gd" id="3_4anso"]
+[ext_resource type="Script" uid="uid://dljsata7hhseo" path="res://StateMachine/Player/player_state_move.gd" id="4_wjw18"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_6miyk")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("2_rc2df")
+initial_state = NodePath("PlayerStateIdle")
+ACTTIVATE_HISTORY = true
+PRINT_HISTORY = true
+metadata/_custom_type_script = "uid://cj8lj1ie5okru"
+
+[node name="PlayerStateIdle" type="Node" parent="StateMachine"]
+script = ExtResource("3_4anso")
+
+[node name="PlayerStateMove" type="Node" parent="StateMachine"]
+script = ExtResource("4_wjw18")
